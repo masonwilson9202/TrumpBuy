@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Site</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+    body{background:#f6f6f6;color:#333;line-height:1.6}
+    .container{max-width:1000px;margin:0 auto;padding:0 20px}
+    header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.05);padding:16px 0}
+    nav{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:22px;font-weight:bold;color:#222}
+    .menu a{margin-left:20px;text-decoration:none;color:#555}
+    .menu a:hover{color:#000}
+    section{padding:40px 0}
+    h2{font-size:24px;margin-bottom:20px}
+    .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:40px}
+    .category{background:#fff;padding:20px;border-radius:8px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,0.03)}
+    .brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+    .brand{background:#fff;padding:24px 20px;border-radius:8px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+    footer{background:#fff;padding:24px 0;text-align:center;color:#777;margin-top:40px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">INDEX</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Brands</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h2>Popular Categories</h2>
+  <div class="categories">
+    <div class="category">Clothing</div>
+    <div class="category">Shoes</div>
+    <div class="category">Bags</div>
+    <div class="category">Electronics</div>
+    <div class="category">Watches</div>
+    <div class="category">Jewelry</div>
+  </div>
+
+  <h2>Popular Brands</h2>
+  <div class="brands">
+    <div class="brand">Brand 1</div>
+    <div class="brand">Brand 2</div>
+    <div class="brand">Brand 3</div>
+    <div class="brand">Brand 4</div>
+    <div class="brand">Brand 5</div>
+    <div class="brand">Brand 6</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; 2026 MyIndex Site. All rights reserved.
+  </div>
+</body>
+</html>
