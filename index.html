@@ -18,6 +18,7 @@
     .section-header h2{font-size:28px;display:flex;align-items:center;gap:10px}
     .section-header .crown{background:#fff3e0;color:#ff9800;padding:8px;border-radius:8px;font-size:18px}
     .view-all{color:#ff7043;text-decoration:none;font-weight:500}
+    /* 这里就是控制4列横排的关键！ */
     .brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
     .brand-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:24px 16px;text-align:center;transition:box-shadow 0.2s}
     .brand-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.08)}
@@ -49,12 +50,16 @@
     <h2><span class="crown">👑</span> Featured Brands</h2>
     <a href="#" class="view-all">View All →</a>
   </div>
-   <div class="brand-card">
+
+  <div class="brands">
+    <!-- 这里已经帮你替换成你上传的Air Jordan图片了 -->
+    <div class="brand-card">
       <div class="brand-logo">
-    <img src="https://github.com/masonwilson9202/TrumpBuy/raw/main/air-jordan.jpg" alt="Air Jordan">
-  </div>
-  <div class="brand-count">2494 products</div>
-</div>
+        <img src="https://github.com/masonwilson9202/TrumpBuy/raw/main/air-jordan.jpg" alt="Air Jordan">
+      </div>
+      <div class="brand-name">Air Jordan</div>
+      <div class="brand-count">2494 products</div>
+    </div>
     <div class="brand-card">
       <div class="brand-logo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Balenciaga_logo.svg/1200px-Balenciaga_logo.svg.png" alt="Balenciaga">
@@ -89,48 +94,6 @@
       </div>
       <div class="brand-name">Gucci</div>
       <div class="brand-count">6923 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Louis_Vuitton_logo.svg/1200px-Louis_Vuitton_logo.svg.png" alt="Louis Vuitton">
-      </div>
-      <div class="brand-name">Louis Vuitton</div>
-      <div class="brand-count">10739 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ralph_Lauren_logo.svg/1200px-Ralph_Lauren_logo.svg.png" alt="Ralph Lauren">
-      </div>
-      <div class="brand-name">Ralph Lauren</div>
-      <div class="brand-count">3830 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png" alt="Adidas">
-      </div>
-      <div class="brand-name">Adidas</div>
-      <div class="brand-count">3547 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/The_North_Face_logo.svg/1200px-The_North_Face_logo.svg.png" alt="The North Face">
-      </div>
-      <div class="brand-name">The North Face</div>
-      <div class="brand-count">1501 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/A_Bathing_Ape_logo.svg/1200px-A_Bathing_Ape_logo.svg.png" alt="A Bathing Ape">
-      </div>
-      <div class="brand-name">A Bathing Ape</div>
-      <div class="brand-count">3269 products</div>
-    </div>
-    <div class="brand-card">
-      <div class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Alexander_McQueen_logo.svg/1200px-Alexander_McQueen_logo.svg.png" alt="Alexander McQueen">
-      </div>
-      <div class="brand-name">Alexander McQueen</div>
-      <div class="brand-count">579 products</div>
     </div>
   </div>
 </section>
