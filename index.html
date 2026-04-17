@@ -6,21 +6,26 @@
   <title>TrumpBuy - Premium Brands Index</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-    body{background:#f6f6f6;color:#333;line-height:1.6}
-    .container{max-width:1000px;margin:0 auto;padding:0 20px}
+    body{background:#fff;color:#333;line-height:1.6}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
     header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.05);padding:16px 0}
     nav{display:flex;justify-content:space-between;align-items:center}
     .logo{font-size:22px;font-weight:bold;color:#222}
     .menu a{margin-left:20px;text-decoration:none;color:#555}
     .menu a:hover{color:#000}
     section{padding:40px 0}
-    h2{font-size:24px;margin-bottom:20px}
-    .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:40px}
-    .category{background:#fff;padding:20px;border-radius:8px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,0.03)}
-    .brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-    .brand{background:#fff;padding:16px;border-radius:8px;text-align:center;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
-    .brand img{width:80px;height:80px;object-fit:contain;margin-bottom:10px}
-    footer{background:#fff;padding:24px 0;text-align:center;color:#777;margin-top:40px}
+    .section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+    .section-header h2{font-size:28px;display:flex;align-items:center;gap:10px}
+    .section-header .crown{background:#fff3e0;color:#ff9800;padding:8px;border-radius:8px;font-size:18px}
+    .view-all{color:#ff7043;text-decoration:none;font-weight:500}
+    .brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .brand-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:24px 16px;text-align:center;transition:box-shadow 0.2s}
+    .brand-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+    .brand-logo{width:64px;height:64px;margin:0 auto 12px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center}
+    .brand-logo img{max-width:48px;max-height:48px;object-fit:contain}
+    .brand-name{font-size:18px;font-weight:600;margin-bottom:6px}
+    .brand-count{font-size:14px;color:#777}
+    footer{background:#fff;padding:24px 0;text-align:center;color:#777;margin-top:40px;border-top:1px solid #eee}
   </style>
 </head>
 <body>
@@ -40,41 +45,95 @@
 </header>
 
 <section class="container">
-  <h2>Popular Categories</h2>
-  <div class="categories">
-    <div class="category">Clothing</div>
-    <div class="category">Shoes</div>
-    <div class="category">Bags</div>
-    <div class="category">Electronics</div>
-    <div class="category">Watches</div>
-    <div class="category">Jewelry</div>
+  <div class="section-header">
+    <h2><span class="crown">👑</span> Featured Brands</h2>
+    <a href="#" class="view-all">View All →</a>
   </div>
 
-  <h2>Popular Brands</h2>
   <div class="brands">
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" alt="Nike">
-      <div>Nike</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Air_Jordan_logo.svg/1200px-Air_Jordan_logo.svg.png" alt="Air Jordan">
+      </div>
+      <div class="brand-name">Air Jordan</div>
+      <div class="brand-count">2494 products</div>
     </div>
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png" alt="Adidas">
-      <div>Adidas</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Balenciaga_logo.svg/1200px-Balenciaga_logo.svg.png" alt="Balenciaga">
+      </div>
+      <div class="brand-name">Balenciaga</div>
+      <div class="brand-count">3773 products</div>
     </div>
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gucci_logo.svg/1200px-Gucci_logo.svg.png" alt="Gucci">
-      <div>Gucci</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Chanel_logo.svg/1200px-Chanel_logo.svg.png" alt="Chanel">
+      </div>
+      <div class="brand-name">Chanel</div>
+      <div class="brand-count">3132 products</div>
     </div>
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Rolex_logo.svg/1200px-Rolex_logo.svg.png" alt="Rolex">
-      <div>Rolex</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dior_Logo.svg/1200px-Dior_Logo.svg.png" alt="Dior">
+      </div>
+      <div class="brand-name">Dior</div>
+      <div class="brand-count">5285 products</div>
     </div>
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png" alt="Apple">
-      <div>Apple</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fendi_logo.svg/1200px-Fendi_logo.svg.png" alt="Fendi">
+      </div>
+      <div class="brand-name">Fendi</div>
+      <div class="brand-count">1633 products</div>
     </div>
-    <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Samsung_Logo.svg/1200px-Samsung_Logo.svg.png" alt="Samsung">
-      <div>Samsung</div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gucci_logo.svg/1200px-Gucci_logo.svg.png" alt="Gucci">
+      </div>
+      <div class="brand-name">Gucci</div>
+      <div class="brand-count">6923 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Louis_Vuitton_logo.svg/1200px-Louis_Vuitton_logo.svg.png" alt="Louis Vuitton">
+      </div>
+      <div class="brand-name">Louis Vuitton</div>
+      <div class="brand-count">10739 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ralph_Lauren_logo.svg/1200px-Ralph_Lauren_logo.svg.png" alt="Ralph Lauren">
+      </div>
+      <div class="brand-name">Ralph Lauren</div>
+      <div class="brand-count">3830 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png" alt="Adidas">
+      </div>
+      <div class="brand-name">Adidas</div>
+      <div class="brand-count">3547 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/The_North_Face_logo.svg/1200px-The_North_Face_logo.svg.png" alt="The North Face">
+      </div>
+      <div class="brand-name">The North Face</div>
+      <div class="brand-count">1501 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/A_Bathing_Ape_logo.svg/1200px-A_Bathing_Ape_logo.svg.png" alt="A Bathing Ape">
+      </div>
+      <div class="brand-name">A Bathing Ape</div>
+      <div class="brand-count">3269 products</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Alexander_McQueen_logo.svg/1200px-Alexander_McQueen_logo.svg.png" alt="Alexander McQueen">
+      </div>
+      <div class="brand-name">Alexander McQueen</div>
+      <div class="brand-count">579 products</div>
     </div>
   </div>
 </section>
